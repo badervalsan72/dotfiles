@@ -25,6 +25,8 @@ set_from_resource $coloru i3wm.color2 "#B6D333"
 set_from_resource $color0 i3wm.color0 "#240c27"
 set_from_resource $color8 i3wm.color8 "#896d8b"
 
+#mis custom keybinds
+bindsym $mod+Shift+b exec --nostartup-id wpg -m
 ######### COLORS ##########
 #
 # class                 border    backgr    text    indicator child_border
