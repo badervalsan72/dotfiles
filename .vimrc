@@ -7,4 +7,4 @@ syntax on
 :command Q q 
 :command W w 
 :set number
-
+:colorscheme slate 
