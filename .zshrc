@@ -9,7 +9,6 @@
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="robbyrussell"
-
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
@@ -65,8 +64,8 @@ ZSH_THEME="robbyrussell"
 plugins=(git)
 
 #source ~/.bashrc
-source $ZSH/oh-my-zsh.sh
-(cat ~/.config/wpg/sequences &)
+source $ZSH/oh-my-zsh.sh 
+#(cat ~/.config/wpg/sequences &)
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -101,7 +100,16 @@ alias i33='cd ~/.config/i3/'
 alias estructuras='cd ~/Sistemas/Estructura_datos/'
 alias progra='cd ~/Sistemas/progra\ II/'
 
-alias word= '~/Downloads/wps-office_10.1.0.6758_x86_64/wps'
-alias excel= '~/Downloads/wps-office_10.1.0.6758_x86_64/et'
-alias powerpoint= '~/Downloads/wps-office_10.1.0.6758_x86_64/wpp'
+alias word='exec ~/Downloads/wps-office_10.1.0.6758_x86_64/wps'
+alias excel='exec ~/Downloads/wps-office_10.1.0.6758_x86_64/et'
+alias powerpoint='exec ~/Downloads/wps-office_10.1.0.6758_x86_64/wpp'
 alias dc='cd && clear'
+alias netflix='exec ~/netflix.sh'
+
+alias :Q='exit'
+alias :q='exit'
+alias db='env GTK_THEME="Adiwata" /usr/bin/dbeaver'
+alias db='env GTK_THEME="Adiwata" /usr/bin/dbeaver'
+alias cw='fortune | cowsay'
+alias sps='sudo pacman -S'
+alias sl='ls -l'
