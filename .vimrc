@@ -10,8 +10,9 @@ syntax on
 :set number
 :set background=dark
 :set termguicolors
-let ayucolor='dark'
-:colorscheme ayu 
+" let ayucolor='dark'
+" :colorscheme ayu 
+:colorscheme elflord 
 set expandtab 
 set tabstop=4 
 set softtabstop=4

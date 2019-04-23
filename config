@@ -24,8 +24,8 @@ exec --no-startup-id xfce4-clipman
 
 
 #mis custom keybinds
-bindsym Ctrl+Shift+r exec --no-startup-id xfce4-terminal -x ranger
-bindsym $mod+w exec --no-startup-id xfce4-terminal -x vim  
+bindsym Ctrl+Shift+r exec --no-startup-id cool-retro-term -x ranger
+bindsym $mod+w exec --no-startup-id cool-retro-term  -x vim  
 bindsym $mod+Shift+b exec --no-startup-id wpg -m
 #COLORS
 set $coloract "#b2b2b2"
@@ -101,7 +101,7 @@ font pango: SFNS Regular 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id xfce4-terminal
+bindsym $mod+Return exec --no-startup-id cool-retro-term
 
 # kill focused window
 bindsym $mod+Shift+q kill
