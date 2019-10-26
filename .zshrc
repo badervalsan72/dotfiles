@@ -3,12 +3,12 @@
 
 # Path to your oh-my-zsh installation.
   export ZSH="/home/erick/.oh-my-zsh"
-
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="robbyrussell"
+# export PS1="[%~]$ "
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
@@ -114,6 +114,6 @@ alias pls='sudo $(fc -ln -1)'
 alias grep='grep -i' 
 alias yt='youtube-dl -x --audio-format mp3'
 alias update='sudo pacman -Syu'
-alias anderson='neofetch --ascii_distro windows10'
+alias winblows='neofetch --ascii_distro windows10'
 alias uptime='uptime -p'
-alias doet= 'git push origin master'
+alias pyman='python manage.py'
