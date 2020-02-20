@@ -124,3 +124,4 @@ alias vimi='vim -c "color peachpuff" -c "hi Normal guibg=NONE ctermbg=NONE"'
 alias sqlgo='sudo systemctl start mssql-server'
 alias sqlstop='sudo systemctl stop mssql-server'
 alias del='rm -ri'
+alias doit="& 1 & disown"
