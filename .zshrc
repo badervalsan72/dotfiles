@@ -65,6 +65,8 @@ plugins=(git)
 
 #source ~/.bashrc
 source $ZSH/oh-my-zsh.sh 
+export PATH=/home/obstacle/packer1.6:$PATH
+export PATH=/home/bin:$PATH
 #(cat ~/.config/wpg/sequences &)
 # User configuration
 
@@ -95,14 +97,14 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias i3config='vim ~/.config/i3/config'
-alias nf=neofetch
+alias nf='neofetch --ascii_distro GNU'
 alias i33='vim ~/.config/i3/config'
 alias dc='cd && clear'
 alias :Q='exit'
 alias :q='exit'
 alias cw='fortune | cowsay'
 alias sps='sudo pacman -S'
-alias sl='ls -la'
+#alias sl='ls -la'
 alias quepasa='git remote update && git status'
 alias v='vim'
 alias free='free --mega'
@@ -111,7 +113,7 @@ alias neo='neofetch --ascii_distro mac'
 alias tlp='sudo tlp start'
 alias cd..='cd ..'
 alias pls='sudo $(fc -ln -1)'
-alias grep='grep -i' 
+alias grep='grep --color=always' 
 alias ytm='youtube-dl -x --audio-format mp3'
 alias update='sudo pacman -Syu'
 alias winblows='neofetch --ascii_distro windows10'
@@ -124,4 +126,7 @@ alias vimi='vim -c "color peachpuff" -c "hi Normal guibg=NONE ctermbg=NONE"'
 alias sqlgo='sudo systemctl start mssql-server'
 alias sqlstop='sudo systemctl stop mssql-server'
 alias del='rm -ri'
-alias doit="& 1 & disown"
+alias doit='& 1 & disown'
+alias supdate='sudo apt update && sudo apt upgrade && sudo apt autoremove'
+alias sapti='sudo apt install'
+alias sude='sudo -E'

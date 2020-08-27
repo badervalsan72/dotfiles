@@ -1,0 +1,9 @@
+#!/bin/bash
+echo -e "\n--- IP configuration status ---\n"
+ipv4=$(hostname -I)
+default=$(ip route | grep default | awk '{print $3}')
+publicIP=$(dig +short myip.opendns.com @resolver1.opendns.com)
+echo -e "Local IP address:\t" $ipv4
+echo -e "Public IP address:\t" $publicIP
+echo -e "Default gateway:\t" $default
+echo -e "\n"
